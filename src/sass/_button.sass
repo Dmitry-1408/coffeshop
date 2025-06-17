@@ -3,17 +3,18 @@
 @use "variables"
 
 /* универсальная кнопка */
-//.btn
-     height: 4rem
+.btn
+     display: flex
+     gap: 2rem
      width: max-content
-     //background-color: variables.$green
-     padding: .8rem 2.4rem
-     //font-family: fonts.$font-face_400
-     font-size: 1.8rem
-     //color: variables.$black
-     border-radius: 5rem
+     background-color: variables.$hover
+     padding: 2.4rem 2.5rem 2.4rem 3.7rem
+     border-radius: 0 3.2rem
      &:hover
-          //background-image: variables.$greenGradient
-
-/* <button class="btn">Try For Free</button> */
-
+          background-color: variables.$hover-trans
+     &__arrow
+          display: inline-block
+          transform: rotate(45deg)
+          width: 3rem
+          height: 3rem
+          stroke-width: 1

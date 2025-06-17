@@ -3,17 +3,20 @@
 @use "variables"
 
 .header
+    padding-bottom: 8rem
     background-color: variables.$background
     width: 100%
-    height: min-content
+    height: max-content
     display: grid
-    grid-template-columns: minmax(1rem, 1fr) minmax(32rem, 128rem) minmax(1rem, 1fr)
+    grid-template-columns: minmax(3rem, 1fr) minmax(32rem, 128rem) minmax(3rem, 1fr)
     &__nav
         height: 8.8rem
         grid-column: 2/3
         display: grid
         grid-auto-flow: column
         align-content: center
+    &__content
+        grid-column: 2/3
 
 .nav
     height: 100%
@@ -32,11 +35,17 @@
     grid-auto-flow: column
     gap: 5.6rem
 
+.mod-ph
+    &:hover
+        font-weight: 600
+        color: variables.$hover
+
 .search
     justify-self: end
     display: grid
     grid-auto-flow: column
     align-content: center
+    align-items: center
     gap: 1.6rem
 
 .glass
@@ -46,3 +55,38 @@
 .bagopen
     width: 18px
     height: 15px
+
+.content
+    max-width: 63.2rem
+    aspect-ratio: 63.2 / 34.8
+    justify-self: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 2.4rem
+    &__title
+        text-align: center
+    &__ph
+        text-align: center
+
+.foto
+    justify-self: center
+    display: grid
+    grid-auto-flow: column
+    gap: 1.6rem
+    &__card
+        max-width: 24.32rem
+        aspect-ratio: 24.32 / 31.8
+        width: 100%
+        overflow: hidden
+
+.card-1
+    border-radius: 0 8rem
+.card-2
+    border-radius: 8rem 0
+.card-3
+    border-radius: 0 8rem
+.card-4
+    border-radius: 8rem 0
+.card-5
+    border-radius: 0 8rem
