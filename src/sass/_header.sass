@@ -2,3 +2,49 @@
 @use "typography"
 @use "variables"
 
+.header
+    background-color: variables.$background
+    width: 100%
+    height: min-content
+    display: grid
+    grid-template-columns: minmax(1rem, 1fr) minmax(32rem, 128rem) minmax(1rem, 1fr)
+    &__nav
+        height: 8.8rem
+        grid-column: 2/3
+        display: grid
+        grid-auto-flow: column
+        align-content: center
+
+.nav
+    height: 100%
+    align-content: center
+    justify-items: center
+
+.logo
+    justify-self: start
+
+.logo-1
+    width: 40px
+    height: 40px
+
+.list
+    display: grid
+    grid-auto-flow: column
+    gap: 5.6rem
+
+.search
+    justify-self: end
+    display: grid
+    grid-auto-flow: column
+    align-content: center
+    gap: 1.6rem
+
+
+
+.glass
+    width: 15px
+    height: 15px
+
+.bagopen
+    width: 18px
+    height: 15px
