@@ -36,11 +36,14 @@
     gap: 5.6rem
 
 .mod-ph
+    position: relative
     &:hover
-        font-weight: 600
+        bottom: .1rem
         color: variables.$hover
 
 .search
+    height: 100%
+    width: max-content
     justify-self: end
     display: grid
     grid-auto-flow: column
@@ -49,12 +52,13 @@
     gap: 1.6rem
 
 .glass
-    width: 15px
-    height: 15px
+    width: 2rem
+    height: 2rem
 
 .bagopen
-    width: 18px
-    height: 15px
+    width: 3rem
+    height: 3rem
+        
 
 .content
     max-width: 63.2rem
@@ -76,7 +80,7 @@
     gap: 1.6rem
     &__card
         max-width: 24.32rem
-        aspect-ratio: 24.32 / 31.8
+        aspect-ratio: 24.32 / 34.8
         width: 100%
         overflow: hidden
 
