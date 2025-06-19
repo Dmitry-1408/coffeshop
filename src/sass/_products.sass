@@ -1,0 +1,31 @@
+@use "variables"
+    
+.products
+    padding: 8rem 0
+    grid-column: 2/3
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__title
+        margin-bottom: 8rem
+    &__button
+        padding: .8rem
+        width: min-content
+        background-color: variables.$btn
+        border-radius: 4rem
+        height: 7.7rem
+        display: flex
+        justify-content: center
+        align-items: center
+    &__btn
+        width: 18rem
+        text-align: center
+
+.btm-active
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: variables.$background
+    width: 18rem
+    height: 6.1rem
+    border-radius: 4rem
