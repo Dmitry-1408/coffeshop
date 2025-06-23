@@ -3,10 +3,10 @@
 @use "variables"
 
 .swiper-1
-    display: flex
-    align-items: center
-    justify-content: center
     margin-bottom: 8rem
+    display: grid
+    grid-auto-flow: column
+    background-color: variables.$background
 
 .swiper
     width: 100%
@@ -14,14 +14,12 @@
 
 .wrapper
     width: 100%
-    max-width: 129rem
     margin-bottom: 4rem
-    display: flex
-    gap: 2.4rem
 
 .slide
     height: max-content
-    max-width: 30.2rem
+    width: 25%
+    box-sizing: border-box
     text-align: center
     &__img
         width: 30.2rem
@@ -66,5 +64,3 @@
     transform: translate(0rem, -18rem)
 .card-img-11
     transform: translate(0rem, -9rem)
-
-
