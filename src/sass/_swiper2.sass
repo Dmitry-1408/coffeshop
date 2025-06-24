@@ -1,0 +1,28 @@
+.slide-2
+    display: flex
+    flex-direction: column
+    gap: 1.6rem
+    padding: 2.4rem 4rem
+    height: max-content
+    width: 33%
+    box-sizing: border-box
+    &__top
+        display: grid
+        grid-template-columns: minmax(10rem, max-content) 1fr
+        gap: 1.6rem
+    &__img
+        width: 10rem
+        height: 10rem
+        border: solid .1rem black
+        border-radius: 50%
+    &__content
+        justify-self: start
+        align-self: center
+        .paragraph-20_mod
+            margin-bottom: .8rem
+
+    &__bottom
+        display: flex
+        justify-content: flex-start
+        p
+            text-align: left
