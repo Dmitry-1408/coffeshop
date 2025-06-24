@@ -1,0 +1,55 @@
+@use "fonts"
+@use "typography"
+@use "variables"
+
+.blog
+    padding: 8rem 0
+    grid-column: 2/3
+    display: grid
+    grid-template-columns: 1fr
+    &__title
+        margin-bottom: 8rem
+    &__cards
+        grid-column: 1/2
+        padding-bottom: 8rem
+    &__btn
+        justify-self: center
+
+.cards
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 3.2rem
+    &__blog
+        padding: 1.6rem
+        width: 100%
+        border: solid .1rem variables.$gris
+        border-radius: 0 9rem 0 4rem
+    &__content-text
+        //display: flex
+    &__img
+        margin-bottom: 1.6rem
+    &__link
+        display: flex
+        justify-content: flex-end
+        a
+            display: flex
+            align-items: center
+            p
+                &:hover
+                    color: variables.$hover
+
+.cont-txt
+    display: flex
+    flex-direction: column
+    gap: 1.6rem
+    &__name-date
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+
+
+.name
+    display: flex
+    gap: .8rem
