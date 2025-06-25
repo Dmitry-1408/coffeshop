@@ -24,11 +24,32 @@
         padding: 1.6rem
         width: 100%
         border: solid .1rem variables.$gris
-        border-radius: 0 9rem 0 4rem
+        border-radius: 0 9.6rem 0 4rem
     &__content-text
         //display: flex
     &__img
+        height: 32rem
+        border-radius: 0 8rem 0 8rem
         margin-bottom: 1.6rem
+        overflow: hidden
+        &_img-1
+            background-image: url('../img/card-1.png')
+            background-image: image-set(url('../img/card-1.webp') type('image/webp'), url('../img/card-1.png') type('image/png'))
+            background-size: cover
+            background-position: 50% 55%
+            background-repeat: no-repeat
+        &_img-2
+            background-image: url('../img/card-2.png')
+            background-image: image-set(url('../img/card-2.webp') type('image/webp'), url('../img/card-2.png') type('image/png'))
+            background-size: cover
+            background-position: 50% 55%
+            background-repeat: no-repeat
+        &_img-3
+            background-image: url('../img/card-3.png')
+            background-image: image-set(url('../img/card-3.webp') type('image/webp'), url('../img/card-3.png') type('image/png'))
+            background-size: cover
+            background-position: 50% 55%
+            background-repeat: no-repeat
     &__link
         display: flex
         justify-content: flex-end
@@ -47,8 +68,6 @@
         width: 100%
         display: flex
         justify-content: space-between
-
-
 
 .name
     display: flex
