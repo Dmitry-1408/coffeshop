@@ -59,3 +59,46 @@
     display: flex
     align-items: center
     gap: 2.4rem
+
+/* форма обратной связи */
+.subscribe-container
+    display: flex
+    flex-direction: column
+    gap: 2.4rem
+    position: relative
+    bottom: 4rem
+    grid-column: 2/5
+    max-width: 81.8rem
+    width: 100%
+    height: max-content
+
+.input-wrapper
+    display: grid
+    grid-template-columns: max-content 1fr max-content
+    background-color: variables.$input
+    border-radius: 1.6rem
+    padding: .8rem .8rem .8rem 2.4rem
+    .icon
+        position: relative
+        top: .3rem
+        margin-right: 0.5rem
+        font-size: 1.5rem
+        align-self: center
+    input
+        background-color: rgba(255, 255, 255, 0)
+        border: none
+        padding: 0.6rem 1.5rem
+        border-radius: 8px
+        font-family: fonts.$poppins
+        font-weight: 400
+        font-size: 2rem
+        color: variables.$background
+        cursor: pointer
+        transition: background 0.3s ease
+        margin-right: .8rem
+    button
+        background-color: variables.$hover
+        width: max-content
+        height: max-content
+        padding: 1.6rem 6.4rem
+        border-radius: .8rem
