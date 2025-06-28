@@ -1,12 +1,20 @@
+@use "fonts"
+@use "typography"
+@use "variables"
+
 .about
     padding-top: 8rem
     grid-column: 2/3
     display: grid
     grid-template-columns: repeat(2, 1fr)
     width: 100%
+    @include variables.respond(desktop)
+        padding-top: 5rem
     &__title
         grid-column: 1/3
         margin-bottom: 8rem
+        @include variables.respond(desktop)
+            margin-bottom: 5rem
     &__content
         grid-column: 1/3
         width: 100%
@@ -25,6 +33,7 @@
     grid-template-columns: 1fr
     justify-content: center
     gap: 2.4rem
+
 .right-cont
     grid-column: 2/3
     display: grid
@@ -38,9 +47,19 @@
         width: 100%
         border-radius: 0 12rem
         overflow: hidden
+        @include variables.respond(desktop)
+            max-width: 100%
+            grid-column: 1/3
+            top: 0
     &__fito-2
         max-width: 28.8rem
         aspect-ratio: 28.8 / 37.8
         width: 100%
         border-radius: 12rem 0
         overflow: hidden
+        @include variables.respond(desktop)
+            position: relative
+            max-width: 100%
+            grid-column: 1/3
+            right: 6rem
+            bottom: 31rem

@@ -21,11 +21,15 @@
     width: 25%
     box-sizing: border-box
     text-align: center
+    @include variables.respond(desktop)
+        width: 50%
     &__img
         width: 30.2rem
         height: 24rem
         border-radius: 0 4rem
         overflow: hidden
+        @include variables.respond(desktop)
+            width: 100%
     &__content
         padding: 1.6rem 2.4rem
         display: flex

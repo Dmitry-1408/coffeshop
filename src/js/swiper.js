@@ -18,6 +18,24 @@ const swiper = new Swiper(".mySwiper", {
   simulateTouch: true,
   touchRatio: 1,
   touchAngle: 45,
+  breakpoints: {
+    1440: {
+      slidesPerView: 4,
+      slidesPerGroup: 1,
+    },
+    1023: {
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+    },
+    /* 425: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    }, */
+  },
 });
 
 /* swiper-2 */
