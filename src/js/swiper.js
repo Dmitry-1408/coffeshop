@@ -56,4 +56,22 @@ const swiper2 = new Swiper(".mySwiper2", {
   simulateTouch: true,
   touchRatio: 1,
   touchAngle: 45,
+  breakpoints: {
+    1440: {
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+    },
+    1023: {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+    },
+    /* 425: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    }, */
+  }
 });
