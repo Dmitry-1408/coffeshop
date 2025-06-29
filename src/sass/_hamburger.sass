@@ -2,10 +2,17 @@
 @use "typography"
 @use "variables"
 
-//.hamburger-wrapper
+.hamburger-wrapper
      display: none
+     @include variables.respond(tablet)
+          display: block
+          grid-column: 3/4
+          justify-self: end
+          align-self: center
+          position: fixed
+          z-index: 1000
 
-//.hamburger-btn
+.hamburger-btn
      width: min-content
      height: min-content
      display: flex
@@ -18,15 +25,15 @@
      z-index: 100
      position: relative
 
-//.span
+.span
      z-index: 2000
      width: 3rem
      height: .2rem
-     //background-color: variables.$font
+     background-color: variables.$paragraph
      margin: 4px 0
      transition: all 0.3s ease
 
-//.hamburger-active
+.hamburger-active
      .span:nth-child(1)
           transform: rotate(45deg) translate(.8rem, .8rem)
      .span:nth-child(2)
@@ -34,7 +41,7 @@
      .span:nth-child(3)
           transform: rotate(-45deg) translate(6px, -6px)
 
-//.hamb
+.hamb
      //padding-top: 7rem
      top: 0
      right: 0
@@ -48,34 +55,32 @@
      transform: translateY(-100%)
      transition: opacity 0.5s ease, transform 0.5s ease
 
-//.hamb.hamb--active
+.hamb.hamb--active
+     display: grid
+     grid-template-columns: 1fr
+     justify-items: center
+     padding-top: 5rem
+     background-color: variables.$gris
      z-index: 2
      opacity: 1
      transform: translateY(0)
 
 /* Анимация скрытия */
-//.hamb.hamb--closing
+.hamb.hamb--closing
      opacity: 0
      transform: translateY(-100%)
      transition: opacity 0.5s ease, transform 0.5s ease
 
-//.menu-list
+.menu-list
      display: flex
      flex-direction: column
      gap: 2rem
      align-items: center
      padding: 0
      height: 100vh
-     //background-color: variables.$gray-4
+     background-color: variables.$hover
 
-//.registr-hamb
-     height: max-content
-     display: flex
-     flex-direction: column
-     gap: 2rem
-     align-items: center
-     padding: 0
-     padding-top: 7rem
-     padding-bottom: 2rem
-     //margin-bottom: 2rem
-    //background-color: variables.$gray-4
+.list-hamb
+    display: flex
+    flex-direction: column
+    gap: 2rem

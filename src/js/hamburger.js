@@ -48,16 +48,25 @@ function closeMenu(hambElement) {
 const hambClass = `
   <nav class="hamb">
 
-    <div class="registr-hamb">
-      <a class="registration__start" href="#">Log in</a>
-      <button class="btn">Try For Free</button>
-    </div>
-    <ul class="menu-list">
-      <li class="list__wrap"><a href="#" class="list__link">Home</a></li>
-      <li class="list__wrap"><a href="#" class="list__link">Features</a></li>
-      <li class="list__wrap"><a href="#" class="list__link">Testimonial</a></li>
-      <li class="list__wrap"><a href="#" class="list__link">FAQ</a></li>
-    </ul>
+
+    <ul class="list-hamb">
+        <li class="list__wrap">
+          <a href="#" class="paragraph-20 mod-ph">Products</a>
+        </li>
+
+        <li class="list__wrap">
+          <a href="#" class="paragraph-20 mod-ph">About us</a>
+        </li>
+
+        <li class="list__wrap">
+          <a href="#" class="paragraph-20 mod-ph">Testimonial</a>
+        </li>
+
+        <li class="list__wrap">
+          <a href="#" class="paragraph-20 mod-ph">Contact</a>
+        </li>
+      </ul>
+
 
   </nav>
 `;
