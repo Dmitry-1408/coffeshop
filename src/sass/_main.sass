@@ -8,3 +8,5 @@
      background-color: variables.$background
      width: 100%
      height: max-content
+     @include variables.respond(mobile)
+          grid-template-columns: minmax(1rem, 1fr) minmax(10rem, 128rem) minmax(1rem, 1fr)
