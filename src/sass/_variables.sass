@@ -10,6 +10,9 @@ $gris: rgb(217, 217, 217)
   @if $breakpoint == mobile
     @media (max-width: 320px)
       @content
+  @if $breakpoint == tabletSmall
+    @media (max-width: 563px)
+      @content
   @else if $breakpoint == tablet
     @media (max-width: 768px)
       @content
@@ -17,4 +20,4 @@ $gris: rgb(217, 217, 217)
     @media (max-width: 1023px)
       @content
 
-//@include variables.respond(tablet)
+//@include variables.respond(tabletSmall)
