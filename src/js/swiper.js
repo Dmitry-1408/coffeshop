@@ -31,10 +31,10 @@ const swiper = new Swiper(".mySwiper", {
       slidesPerView: 2,
       slidesPerGroup: 1,
     },
-    /* 425: {
+    320: {
       slidesPerView: 1,
       slidesPerGroup: 1,
-    }, */
+    },
   },
 });
 

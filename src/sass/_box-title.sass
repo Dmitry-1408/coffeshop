@@ -1,5 +1,12 @@
+@use "variables"
+    
 .box-title
     display: flex
     flex-direction: column
     align-items: center
     gap: 1rem
+    .title-h2
+        @include variables.respond(tablet)
+            font-size: 2.6rem
+            text-align: center
+
