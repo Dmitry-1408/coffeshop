@@ -8,11 +8,17 @@
     align-items: center
     @include variables.respond(desktop)
         padding-top: 5rem
+    @include variables.respond(mobile)
+        padding-top: 3rem
     &__title
         margin-bottom: 8rem
         @include variables.respond(desktop)
             margin-bottom: 5rem
+        @include variables.respond(mobile)
+            margin-bottom: 3rem
     .swiper
         margin-bottom: 8rem
         @include variables.respond(desktop)
             margin-bottom: 5rem
+        @include variables.respond(mobile)
+            margin-bottom: 3rem

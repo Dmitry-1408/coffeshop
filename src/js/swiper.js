@@ -69,9 +69,9 @@ const swiper2 = new Swiper(".mySwiper2", {
       slidesPerView: 2,
       slidesPerGroup: 1,
     },
-    /* 425: {
+    320: {
       slidesPerView: 1,
       slidesPerGroup: 1,
-    }, */
+    },
   }
 });
